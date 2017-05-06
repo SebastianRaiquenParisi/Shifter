@@ -27,9 +27,9 @@ public class WinScript : MonoBehaviour
     {
         float t = Time.time - startTime;
         timerText.text = ((int)t / 60).ToString() + ":" + (t % 60).ToString("f0");
-        if (topMinutes <= (int)t / 60 && topSeconds <= (t % 60)-10)
+        if (topMinutes <= (int)t / 60 && topSeconds-10 <= (t % 60))
         {
-            timerText.color = Color.green;
+            timerText.color = Color.yellow;
         }
         if (topMinutes <= (int)t / 60 && topSeconds <= t % 60)
         {
