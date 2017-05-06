@@ -9,6 +9,7 @@ public class PlayerSpawner : MonoBehaviour {
     GameObject playerInstance;
     int numLives = 4;
     float respawnTimer;
+    public GameObject GameOverUI;
 	void Start () {
         SpawnPlayer();
 	}
@@ -19,9 +20,12 @@ public class PlayerSpawner : MonoBehaviour {
         playerInstance = (GameObject) Instantiate(playerPrefab, transform.position, Quaternion.identity);
         playerInstance.name = "Player";
     }
-	// Update is called once per frame
 	void Update ()
     {
+        if (numLives == 0 && playerInstance==null)
+        {
+            GameOver();
+        }
         textLives.text = "x" + numLives.ToString();
         if (playerInstance == null && numLives > 0)
         {
@@ -31,9 +35,9 @@ public class PlayerSpawner : MonoBehaviour {
                 SpawnPlayer();
             }
         }
-	}
-    public void finished()
+    }
+    public void GameOver()
     {
-
+        GameOverUI.SetActive(true);
     }
 }

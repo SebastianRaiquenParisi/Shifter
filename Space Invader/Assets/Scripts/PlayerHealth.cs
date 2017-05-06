@@ -1,20 +1,23 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.UI;
 public class PlayerHealth : MonoBehaviour {
 
     GameObject[] arrayHearts = new GameObject[3];
+    public Sprite fullHeart;
+    public Sprite emptyHeart;
     public int health = 3;
     public float invulnPeriod = 1.5f;
     float invulnTimer = 0;
     int correctLayer;
     void Start()
     {
-        arrayHearts[0] = GameObject.Find("Heart1");
-        arrayHearts[1] = GameObject.Find("Heart2");
-        arrayHearts[2] = GameObject.Find("Heart3");
-        HeartsSetActive();
+        for (int i = 0; i < 3; i++)
+        {
+            arrayHearts[i] = GameObject.Find("Heart" + (i+1).ToString());
+        }
+        FullHearts();
         correctLayer = gameObject.layer;
     }
     void OnTriggerEnter2D()
@@ -22,7 +25,7 @@ public class PlayerHealth : MonoBehaviour {
         health--;
         invulnTimer = invulnPeriod;
         gameObject.layer = 10;
-        arrayHearts[health].SetActive(false);
+        arrayHearts[health].GetComponent<Image>().sprite = emptyHeart;
 
     }
     void Update()
@@ -39,19 +42,19 @@ public class PlayerHealth : MonoBehaviour {
 
         if (health <= 0)
         {
-            HeartsSetActive();
+            FullHearts();
             Die();
         }
     }
-    void HeartsSetActive()
+    void FullHearts()
     {
-        arrayHearts[0].SetActive(true);
-        arrayHearts[1].SetActive(true);
-        arrayHearts[2].SetActive(true);
+        for (int i = 0; i < 3; i++)
+        {
+            arrayHearts[i].GetComponent<Image>().sprite = fullHeart;
+        }
     }
     void Die()
     {
         Destroy(gameObject);
     }
-
 }

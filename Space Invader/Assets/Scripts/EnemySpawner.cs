@@ -14,9 +14,9 @@ public class EnemySpawner : MonoBehaviour {
         {
             nextEnemy = enemyRate;
             enemyRate *= 0.9f;
-            if(enemyRate < 2)
+            if(enemyRate < 1)
             {
-                enemyRate = 2;
+                enemyRate = 1;
             }
             Vector3 offset = Random.onUnitSphere;
             offset.z = 0;
