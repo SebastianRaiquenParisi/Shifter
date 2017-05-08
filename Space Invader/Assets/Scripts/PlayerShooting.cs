@@ -13,7 +13,7 @@ public class PlayerShooting : MonoBehaviour {
     }
     void Update () {
         cooldownTimer -= Time.deltaTime;
-        if (Input.GetButton("Fire1") && cooldownTimer <= 0)
+        if (Input.GetButtonDown("Fire1") && cooldownTimer <= 0)
         {
             //Fire
             cooldownTimer = fireDelay;
