@@ -25,6 +25,10 @@ public class WinScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (GameObject.Find("GameOver").activeSelf)
+        {
+            return;
+        }
         float t = Time.time - startTime;
         timerText.text = ((int)t / 60).ToString() + ":" + (t % 60).ToString("f0");
         if (topMinutes <= (int)t / 60 && topSeconds-10 <= (t % 60))
