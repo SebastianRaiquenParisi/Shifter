@@ -9,24 +9,25 @@ public class PlayerMovement : MonoBehaviour {
         Vector3 pos = transform.position;
         pos.y += Input.GetAxis("Vertical") * maxSpeed * Time.deltaTime;
         pos.x += Input.GetAxis("Horizontal") * maxSpeed * Time.deltaTime;
-
-        if(Input.GetAxisRaw("Horizontal") < 0)
+        if(Time.timeScale != 0)
         {
-            Rotate(90);
+            if (Input.GetAxisRaw("Horizontal") < 0)
+            {
+                Rotate(90);
+            }
+            if (Input.GetAxisRaw("Horizontal") > 0)
+            {
+                Rotate(270);
+            }
+            if (Input.GetAxisRaw("Vertical") < 0)
+            {
+                Rotate(180);
+            }
+            if (Input.GetAxisRaw("Vertical") > 0)
+            {
+                Rotate(0);
+            }
         }
-        if (Input.GetAxisRaw("Horizontal") > 0)
-        {
-            Rotate(270);
-        }
-        if (Input.GetAxisRaw("Vertical") < 0)
-        {
-            Rotate(180);
-        }
-        if (Input.GetAxisRaw("Vertical") > 0)
-        {
-            Rotate(0);
-        }
-
         if (pos.y+shipBoundaryRadius > Camera.main.orthographicSize)
         {
             pos.y = Camera.main.orthographicSize - shipBoundaryRadius;

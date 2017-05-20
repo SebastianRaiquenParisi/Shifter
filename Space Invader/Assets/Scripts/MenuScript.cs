@@ -4,8 +4,14 @@ using UnityEngine.SceneManagement;
 
 public class MenuScript : MonoBehaviour {
     public GameObject uI;
-	void Update()
+    public GameObject gameWon;
+    public GameObject gameOver;
+    void Update()
     {
+        if(gameOver.activeSelf || gameWon.activeSelf)
+        {
+            return;
+        }
         if (Input.GetKeyDown(KeyCode.P) || Input.GetKeyDown(KeyCode.Escape))
         {
             Toggle();

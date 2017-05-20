@@ -9,6 +9,7 @@ public class WinScript : MonoBehaviour
     public Text timerText;
     public int publicTopMinutes = 1;
     public int publicTopSeconds = 30;
+    public GameObject gameOver;
     int topMinutes;
     int topSeconds;
     private float startTime;
@@ -25,7 +26,7 @@ public class WinScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (GameObject.Find("GameOver").activeSelf)
+        if (gameOver.activeSelf)
         {
             return;
         }
