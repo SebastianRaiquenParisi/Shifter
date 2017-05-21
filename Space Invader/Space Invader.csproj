@@ -78,17 +78,21 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\Enemies\BossHealthMovement.cs" />
     <Compile Include="Assets\Scripts\Enemies\EnemyHealth.cs" />
     <Compile Include="Assets\Scripts\Enemies\EnemyShooting.cs" />
-    <Compile Include="Assets\Scripts\Enemies\enemyBulletDoesntFollow.cs" />
-    <Compile Include="Assets\Scripts\Enemies\enemyBulletFollowsPlayer.cs" />
+    <Compile Include="Assets\Scripts\Enemies\Laser Game\BossSpawnerLaser.cs" />
+    <Compile Include="Assets\Scripts\Enemies\Laser Game\LaserScript.cs" />
+    <Compile Include="Assets\Scripts\Enemies\Standard Game\enemyBulletDoesntFollow.cs" />
+    <Compile Include="Assets\Scripts\Enemies\Standard Game\enemyBulletFollowsPlayer.cs" />
+    <Compile Include="Assets\Scripts\Enemies\Sword Game\BossSpawnerSwords.cs" />
+    <Compile Include="Assets\Scripts\Enemies\Sword Game\SwordSuperAttack.cs" />
     <Compile Include="Assets\Scripts\Enemies\enemySpawner.cs" />
     <Compile Include="Assets\Scripts\FacesPlayer.cs" />
     <Compile Include="Assets\Scripts\GameOverManager.cs" />
     <Compile Include="Assets\Scripts\HealthBarScript.cs" />
     <Compile Include="Assets\Scripts\MenuScript.cs" />
     <Compile Include="Assets\Scripts\MoveForward.cs" />
-    <Compile Include="Assets\Scripts\NewBehaviourScript.cs" />
     <Compile Include="Assets\Scripts\PlayerHealth.cs" />
     <Compile Include="Assets\Scripts\PlayerMovement.cs" />
     <Compile Include="Assets\Scripts\PlayerShooting.cs" />

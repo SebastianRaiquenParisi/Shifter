@@ -4,7 +4,7 @@ using UnityEngine.UI;
 
 public class HealthBarScript : MonoBehaviour {
     public Image healthBar;
-    public float startHealth = 100;
+    public float startHealth = 30;
     public float health;
 	// Use this for initialization
 	void Start () {
