@@ -1,11 +1,43 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
 public class PlayerMovement : MonoBehaviour {
-    float maxSpeed = 15f;
+    public float maxSpeed = 15f;
+    public float cooldownRun = 5f;
+    public float maxSpeedRun = 20f;
+    public float runDuration = 6f;
+    Image sprintBar;
     float shipBoundaryRadius = 1.2f;
+    float startingCooldownRun;
+    float startingSpeed;
+    float startingRunDuration;
+
+    void Start()
+    {
+        sprintBar = GameObject.Find("SprintBar").transform.GetComponent<Image>();
+        startingRunDuration = runDuration;
+        startingCooldownRun = cooldownRun + runDuration;
+        startingSpeed = maxSpeed;
+        cooldownRun = 0;
+    }
 
     void Update() {
+
+
+        if (cooldownRun <= 0 && Input.GetButtonDown("Fire2"))
+        {
+            maxSpeed = maxSpeedRun;
+            cooldownRun = startingCooldownRun;
+            runDuration = startingRunDuration;
+        }
+        runDuration -= Time.deltaTime;
+        if(cooldownRun > 0 && runDuration <= 0)
+        {
+            maxSpeed = startingSpeed;
+            cooldownRun -= Time.deltaTime;
+        }
+        sprintBar.fillAmount = cooldownRun / startingCooldownRun;
         Vector3 pos = transform.position;
         pos.y += Input.GetAxis("Vertical") * maxSpeed * Time.deltaTime;
         pos.x += Input.GetAxis("Horizontal") * maxSpeed * Time.deltaTime;

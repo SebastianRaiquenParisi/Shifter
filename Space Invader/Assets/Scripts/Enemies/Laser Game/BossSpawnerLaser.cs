@@ -4,12 +4,12 @@ using UnityEngine;
 
 public class BossSpawnerLaser : MonoBehaviour {
 
-    float enemyRate = 5;
+    float enemyRate = 4;
     float nextEnemy = 1;
     float spawnDistance = 20;
     public GameObject[] enemyPrefab;
     public GameObject SuperAttack;
-    public float countdown4SuperAttack = 5;
+    public float countdown4SuperAttack = 3;
     float startingCountdown;
 
     private void Start()
@@ -24,7 +24,7 @@ public class BossSpawnerLaser : MonoBehaviour {
         {
             countdown4SuperAttack--;
             nextEnemy = enemyRate;
-            enemyRate *= 0.9f;
+            enemyRate *= 0.8f;
             if (enemyRate < 1)
             {
                 enemyRate = 1;

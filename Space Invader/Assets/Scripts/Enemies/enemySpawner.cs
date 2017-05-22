@@ -22,7 +22,7 @@ public class enemySpawner : MonoBehaviour {
             Vector3 offset = Random.onUnitSphere;
             offset.z = 0;
             offset = offset.normalized * spawnDistance;
-            Instantiate(enemyPrefab[Random.Range(0, enemyPrefab.Length-1)], transform.position + offset, Quaternion.identity);
+            Instantiate(enemyPrefab[Random.Range(0, enemyPrefab.Length)], transform.position + offset, Quaternion.identity);
         }
     }
 }
