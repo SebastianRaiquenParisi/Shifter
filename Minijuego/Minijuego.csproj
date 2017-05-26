@@ -87,7 +87,9 @@
     <Compile Include="Assets\Scripts\Enemies\Standard Game\enemyBulletDoesntFollow.cs" />
     <Compile Include="Assets\Scripts\Enemies\Standard Game\enemyBulletFollowsPlayer.cs" />
     <Compile Include="Assets\Scripts\Enemies\Sword Game\BossSpawnerSwords.cs" />
+    <Compile Include="Assets\Scripts\Enemies\Sword Game\SwordStrayForward.cs" />
     <Compile Include="Assets\Scripts\Enemies\Sword Game\SwordSuperAttack.cs" />
+    <Compile Include="Assets\Scripts\Enemies\WinScriptBosses.cs" />
     <Compile Include="Assets\Scripts\Enemies\enemySpawner.cs" />
     <Compile Include="Assets\Scripts\FacesPlayer.cs" />
     <Compile Include="Assets\Scripts\GameOverManager.cs" />
