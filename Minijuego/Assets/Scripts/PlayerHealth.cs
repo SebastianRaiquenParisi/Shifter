@@ -11,8 +11,10 @@ public class PlayerHealth : MonoBehaviour {
     public float invulnPeriod = 1.5f;
     float invulnTimer = 0;
     int correctLayer;
+
     void Start()
     {
+        
         for (int i = 0; i < 3; i++)
         {
             arrayHearts[i] = GameObject.Find("Heart" + (i+1).ToString());
@@ -21,6 +23,17 @@ public class PlayerHealth : MonoBehaviour {
         correctLayer = gameObject.layer;
     }
     void OnTriggerEnter2D()
+    {
+        health--;
+        invulnTimer = invulnPeriod;
+        gameObject.layer = 10;
+        if (health >= 0)
+        {
+            arrayHearts[health].GetComponent<Image>().sprite = emptyHeart;
+        }
+
+    }
+    void OnCollisionEnter2D()
     {
         health--;
         invulnTimer = invulnPeriod;

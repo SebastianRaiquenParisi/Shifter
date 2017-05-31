@@ -13,8 +13,17 @@ public class PlayerMovement : MonoBehaviour {
     float startingSpeed;
     float startingRunDuration;
 
+    public GameObject bulletPrefab;
+    public float fireDelay = 1.1f;
+    float cooldownTimer = 0;
+    int bulletLayer;
+    float tiempoAntesDelDisparo;
+    bool disparo = false;
+
     void Start()
     {
+        bulletLayer = gameObject.layer;
+
         sprintBar = GameObject.Find("SprintBar").transform.GetComponent<Image>();
         startingRunDuration = runDuration;
         startingCooldownRun = cooldownRun + runDuration;
@@ -23,7 +32,25 @@ public class PlayerMovement : MonoBehaviour {
     }
 
     void Update() {
-
+        cooldownTimer -= Time.deltaTime;
+        if (Input.GetButtonDown("Fire1") && cooldownTimer <= 0)
+        {
+            //seteas el timer
+            tiempoAntesDelDisparo = 0.06f;
+            disparo = true;
+        }
+        if (disparo && tiempoAntesDelDisparo <= 0 && cooldownTimer <= 0)
+        {
+            cooldownTimer = fireDelay;
+            Vector3 offset = transform.rotation * new Vector3(0, 1.3f, 0);
+            GameObject bulletGO = Instantiate(bulletPrefab, transform.position + offset, transform.rotation);
+            bulletGO.layer = bulletLayer;
+            disparo = false;
+        }
+        else
+        {
+            tiempoAntesDelDisparo -= Time.deltaTime;
+        }
 
         if (cooldownRun <= 0 && Input.GetButtonDown("Fire2"))
         {
@@ -38,47 +65,49 @@ public class PlayerMovement : MonoBehaviour {
             cooldownRun -= Time.deltaTime;
         }
         sprintBar.fillAmount = cooldownRun / startingCooldownRun;
-        Vector3 pos = transform.position;
-        pos.y += Input.GetAxis("Vertical") * maxSpeed * Time.deltaTime;
-        pos.x += Input.GetAxis("Horizontal") * maxSpeed * Time.deltaTime;
-        if(Time.timeScale != 0)
-        {
-            if (Input.GetAxisRaw("Horizontal") < 0)
+        if (!disparo) {
+            Vector3 pos = transform.position;
+            pos.y += Input.GetAxis("Vertical") * maxSpeed * Time.deltaTime;
+            pos.x += Input.GetAxis("Horizontal") * maxSpeed * Time.deltaTime;
+            if (Time.timeScale != 0)
             {
-                Rotate(90);
+                if (Input.GetAxisRaw("Horizontal") < 0)
+                {
+                    Rotate(90);
+                }
+                if (Input.GetAxisRaw("Horizontal") > 0)
+                {
+                    Rotate(270);
+                }
+                if (Input.GetAxisRaw("Vertical") < 0)
+                {
+                    Rotate(180);
+                }
+                if (Input.GetAxisRaw("Vertical") > 0)
+                {
+                    Rotate(0);
+                }
             }
-            if (Input.GetAxisRaw("Horizontal") > 0)
+            if (pos.y + shipBoundaryRadius > Camera.main.orthographicSize)
             {
-                Rotate(270);
+                pos.y = Camera.main.orthographicSize - shipBoundaryRadius;
             }
-            if (Input.GetAxisRaw("Vertical") < 0)
+            if (pos.y - shipBoundaryRadius < -Camera.main.orthographicSize)
             {
-                Rotate(180);
+                pos.y = -Camera.main.orthographicSize + shipBoundaryRadius;
             }
-            if (Input.GetAxisRaw("Vertical") > 0)
+            float screenRatio = (float)Screen.width / (float)Screen.height;
+            float widthOrtho = Camera.main.orthographicSize * screenRatio;
+            if (pos.x + shipBoundaryRadius > widthOrtho)
             {
-                Rotate(0);
+                pos.x = widthOrtho - shipBoundaryRadius;
             }
+            if (pos.x - shipBoundaryRadius < -widthOrtho)
+            {
+                pos.x = -widthOrtho + shipBoundaryRadius;
+            }
+            transform.position = pos;
         }
-        if (pos.y+shipBoundaryRadius > Camera.main.orthographicSize)
-        {
-            pos.y = Camera.main.orthographicSize - shipBoundaryRadius;
-        }
-        if (pos.y - shipBoundaryRadius < -Camera.main.orthographicSize)
-        {
-            pos.y = -Camera.main.orthographicSize + shipBoundaryRadius;
-        }
-        float screenRatio = (float)Screen.width / (float)Screen.height;
-        float widthOrtho = Camera.main.orthographicSize * screenRatio;
-        if (pos.x + shipBoundaryRadius > widthOrtho)
-        {
-            pos.x = widthOrtho - shipBoundaryRadius;
-        }
-        if (pos.x - shipBoundaryRadius < -widthOrtho)
-        {
-            pos.x = -widthOrtho + shipBoundaryRadius;
-        }
-        transform.position = pos;
     }
     void Rotate(int number)
     {
