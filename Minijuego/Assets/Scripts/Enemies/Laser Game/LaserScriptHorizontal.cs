@@ -2,32 +2,23 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class LaserScript : MonoBehaviour {
-    public Sprite spriteHeight;
-    public Sprite spriteWidth;
+public class LaserScriptHorizontal : MonoBehaviour {
+    public Sprite WarningSprite;
     public float tiempoDeAdvertencia = 2;
     public float tiempoDeDaño = 1.4f;
+    Sprite correctSprite;
 
     // Use this for initialization
-    void Start () {
+    void Start() {
         float width = Camera.main.orthographicSize * Screen.width / Screen.height;
         width = width / 2.6f;
         float heigth = Camera.main.orthographicSize / 2.6f;
         Vector3 localScale = gameObject.transform.localScale;
-        if(Random.Range(0,2) == 1)
-        {
-            gameObject.GetComponent<SpriteRenderer>().sprite = spriteWidth;
-            localScale.x = width*2;
-            localScale.y = heigth * 0.5f;
-        }
-        else
-        {
-            gameObject.GetComponent<SpriteRenderer>().sprite = spriteHeight;
-            localScale.x = width * 1.4f;
-            localScale.y = heigth*2;
-        }
+        localScale.x = width * 2;
+        localScale.y = heigth * 0.5f;
         gameObject.transform.localScale = localScale;
-        ResetCollider();
+        correctSprite = gameObject.GetComponent<SpriteRenderer>().sprite;
+        
     }
 	
 	// Update is called once per frame
@@ -35,21 +26,18 @@ public class LaserScript : MonoBehaviour {
         if (tiempoDeAdvertencia > 0)
         {
             gameObject.layer = 10;
+            gameObject.GetComponent<SpriteRenderer>().sprite = WarningSprite;
         }
         else
         {
             tiempoDeDaño -= Time.deltaTime;
             gameObject.layer = 8;
+            gameObject.GetComponent<SpriteRenderer>().sprite = correctSprite;
         }
         tiempoDeAdvertencia -= Time.deltaTime;
         if (tiempoDeDaño <= 0)
         {
             Destroy(gameObject);
         }
-    }
-    void ResetCollider()
-    {
-        Destroy(gameObject.GetComponent<PolygonCollider2D>());
-        gameObject.AddComponent<PolygonCollider2D>();
     }
 }

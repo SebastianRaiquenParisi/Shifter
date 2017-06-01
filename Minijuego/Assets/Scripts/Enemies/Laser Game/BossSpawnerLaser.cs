@@ -8,7 +8,8 @@ public class BossSpawnerLaser : MonoBehaviour {
     float nextEnemy = 1;
     float spawnDistance = 20;
     public GameObject[] enemyPrefab;
-    public GameObject SuperAttack;
+    public GameObject HorizontalLaser;
+    public GameObject VerticalLaser;
     public GameObject WeakPoint;
     public float countdown4SuperAttack = 2;
     public float countdown4WeakPoint = 6;
@@ -41,8 +42,14 @@ public class BossSpawnerLaser : MonoBehaviour {
         if (countdown4SuperAttack <= 0)
         {
             countdown4WeakPoint--;
-            
-            Instantiate(SuperAttack, transform.position + offset, Quaternion.identity);
+            if (Random.Range(0, 2) == 0)
+            {
+                Instantiate(HorizontalLaser, transform.position + offset, Quaternion.identity);
+            }
+            else
+            {
+                Instantiate(VerticalLaser, transform.position + offset, Quaternion.identity);
+            }
             countdown4SuperAttack = startingCountdown;
         }
         if (countdown4WeakPoint <= 0)

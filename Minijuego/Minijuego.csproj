@@ -84,7 +84,8 @@
     <Compile Include="Assets\Scripts\Enemies\EnemyHealth.cs" />
     <Compile Include="Assets\Scripts\Enemies\EnemyShooting.cs" />
     <Compile Include="Assets\Scripts\Enemies\Laser Game\BossSpawnerLaser.cs" />
-    <Compile Include="Assets\Scripts\Enemies\Laser Game\LaserScript.cs" />
+    <Compile Include="Assets\Scripts\Enemies\Laser Game\LaserScriptHorizontal.cs" />
+    <Compile Include="Assets\Scripts\Enemies\Laser Game\LaserScriptVertical.cs" />
     <Compile Include="Assets\Scripts\Enemies\Standard Game\enemyBulletDoesntFollow.cs" />
     <Compile Include="Assets\Scripts\Enemies\Standard Game\enemyBulletFollowsPlayer.cs" />
     <Compile Include="Assets\Scripts\Enemies\Sword Game\BossSpawnerSwords.cs" />

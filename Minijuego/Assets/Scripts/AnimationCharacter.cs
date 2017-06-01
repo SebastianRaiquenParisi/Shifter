@@ -13,22 +13,25 @@ public class AnimationCharacter : MonoBehaviour {
 
     // Update is called once per frame
     void Update () {
-        if (Input.GetAxisRaw("Horizontal") < -0.5 || Input.GetAxisRaw("Horizontal") > 0.5 || Input.GetAxisRaw("Vertical") < -0.5 || Input.GetAxisRaw("Vertical") > 0.5)
+        if (Time.timeScale != 0)
         {
-            anim.SetBool("Moving", true);
+            if (Input.GetAxisRaw("Horizontal") < -0.5 || Input.GetAxisRaw("Horizontal") > 0.5 || Input.GetAxisRaw("Vertical") < -0.5 || Input.GetAxisRaw("Vertical") > 0.5)
+            {
+                anim.SetBool("Moving", true);
+            }
+            else
+            {
+                anim.SetBool("Moving", false);
+            }
+            if (Input.GetButtonDown("Fire1"))
+            {
+                attacking = true;
+            }
+            if (attacking)
+            {
+                anim.SetTrigger("Attack");
+            }
+            attacking = false;
         }
-        else
-        {
-            anim.SetBool("Moving", false);
-        }
-        if (Input.GetButtonDown("Fire1"))
-        {
-            attacking = true;
-        }
-        if (attacking)
-        {
-            anim.SetTrigger("Attack");
-        }
-        attacking = false;
     }
 }
