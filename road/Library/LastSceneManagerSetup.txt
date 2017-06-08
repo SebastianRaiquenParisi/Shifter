@@ -1,0 +1,4 @@
+sceneSetups:
+- path: Assets/Road scene.unity
+  isLoaded: 1
+  isActive: 1
