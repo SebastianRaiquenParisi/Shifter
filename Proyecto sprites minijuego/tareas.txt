@@ -1,0 +1,7 @@
+Disparo laser
+Ring de boxeo FONDO
+Logo de boxeo FONDO
+
+
+Extras:
+Explosion al disparo
