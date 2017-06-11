@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Preferences>
+<NotificationLogFile>C:\Users\Seba\AppData\Local\Adobe\AAMUpdater\1.0\aamun.log</NotificationLogFile>
+<LogLevel>2</LogLevel>
+<LastDateCheck>2017-05-31T11:18:25</LastDateCheck>
+<IsScheduledTaskAdded>1</IsScheduledTaskAdded>
+<IsScheduledTaskNeeded>0</IsScheduledTaskNeeded>
+<StartupLogFile>C:\Users\Seba\AppData\Local\Adobe\AAMUpdater\1.0\aamul.log</StartupLogFile>
+<SilentNotificationLogFile>C:\Users\Seba\AppData\Local\Adobe\AAMUpdater\1.0\aamus.log</SilentNotificationLogFile>
+<WebFeedEtag>&quot;42352-550464610eb40&quot;</WebFeedEtag>
+<WebFeedSize>271186</WebFeedSize>
+<WebFeedSeqNo>1</WebFeedSeqNo>
+<CSUVersion>9.0</CSUVersion>
+<OSVersion>6.1.7601</OSVersion>
+<IsFirstRun>0</IsFirstRun>
+<ChannelsInstalled>
+<MapPrefEntry MapPrefKey="AdobeAPE3.4_Win64_NoLocale">1</MapPrefEntry>
+<MapPrefEntry MapPrefKey="AdobeApplicationManager-1.0">1</MapPrefEntry>
+<MapPrefEntry MapPrefKey="AdobeColorCommonSetCMYK-5.0">1</MapPrefEntry>
+<MapPrefEntry MapPrefKey="AdobeColorCommonSetRGB-5.0">1</MapPrefEntry>
+<MapPrefEntry MapPrefKey="AdobeColorEUExtraSettingsCC-5.0">1</MapPrefEntry>
+<MapPrefEntry MapPrefKey="AdobeColorJAExtraSettingsCC-5.0">1</MapPrefEntry>
+<MapPrefEntry MapPrefKey="AdobeColorNARecommendedSettingsCC-5.0">1</MapPrefEntry>
+<MapPrefEntry MapPrefKey="AdobeIllustrator19-en_US_x64">1</MapPrefEntry>
+<MapPrefEntry MapPrefKey="AdobeIllustrator19-mul_x64">1</MapPrefEntry>
+<MapPrefEntry MapPrefKey="AdobeIllustratorCC2015Support-19.0">1</MapPrefEntry>
+</ChannelsInstalled>
+<ChannelsEnabled>
+<MapPrefEntry MapPrefKey="AdobeAPE3.4_Win64_NoLocale">1</MapPrefEntry>
+<MapPrefEntry MapPrefKey="AdobeApplicationManager-1.0">1</MapPrefEntry>
+<MapPrefEntry MapPrefKey="AdobeColorCommonSetCMYK-5.0">1</MapPrefEntry>
+<MapPrefEntry MapPrefKey="AdobeColorCommonSetRGB-5.0">1</MapPrefEntry>
+<MapPrefEntry MapPrefKey="AdobeColorEUExtraSettingsCC-5.0">1</MapPrefEntry>
+<MapPrefEntry MapPrefKey="AdobeColorJAExtraSettingsCC-5.0">1</MapPrefEntry>
+<MapPrefEntry MapPrefKey="AdobeColorNARecommendedSettingsCC-5.0">1</MapPrefEntry>
+<MapPrefEntry MapPrefKey="AdobeIllustrator19-en_US_x64">1</MapPrefEntry>
+<MapPrefEntry MapPrefKey="AdobeIllustrator19-mul_x64">1</MapPrefEntry>
+<MapPrefEntry MapPrefKey="AdobeIllustratorCC2015Support-19.0">1</MapPrefEntry>
+</ChannelsEnabled>
+</Preferences>

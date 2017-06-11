@@ -1,0 +1,45 @@
+REGEDIT4
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Adobe]
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Adobe\Photoshop]
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Adobe\Photoshop\60.0]
+"ApplicationPath"="C:\\Users\\Seba\\Desktop\\PhotoshopPortable\\App\\PhotoshopCS6\\"
+"PluginPath"="C:\\Users\\Seba\\Desktop\\PhotoshopPortable\\App\\PhotoshopCS6\\Plug-Ins\\"
+"FreeBeforeSlopAdjust"=dword:00380000
+"FreeSpace"=dword:001e84cc
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Adobe\Photoshop\60.0\ApplicationPath]
+@="C:\\Users\\Seba\\Desktop\\PhotoshopPortable\\App\\PhotoshopCS6\\"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Adobe\Photoshop\60.0\PluginPath]
+@="C:\\Users\\Seba\\Desktop\\PhotoshopPortable\\App\\PhotoshopCS6\\Plug-Ins\\"
+
+[HKEY_CURRENT_USER\Software\Adobe]
+
+[HKEY_CURRENT_USER\Software\Adobe\IAC]
+"UserID"="2A60BE45EEFD6963F212AB7872958DD4"
+
+[HKEY_CURRENT_USER\Software\Adobe\MediaBrowser]
+
+[HKEY_CURRENT_USER\Software\Adobe\MediaBrowser\MRU]
+
+[HKEY_CURRENT_USER\Software\Adobe\MediaBrowser\MRU\Photoshop]
+
+[HKEY_CURRENT_USER\Software\Adobe\MediaBrowser\MRU\Photoshop\FileList]
+
+[HKEY_CURRENT_USER\Software\Adobe\MediaBrowser\MRU\Photoshop\FileList\2017-06-01T00:08:07.530Z]
+@="F:\\PARISI\\Proyecto sprites minijuego\\Illustrator Sprites\\laser rojo.psd"
+
+[HKEY_CURRENT_USER\Software\Adobe\Photoshop]
+
+[HKEY_CURRENT_USER\Software\Adobe\Photoshop\60.0]
+"uiLanguageKey CS6"="en_US"
+"oldPaletteFontTypeKey CS6"=dword:00000000
+"MemoryUsage"=dword:0000003c
+"ShowStatusWindow"=dword:00000001
+"AppWindowPosition"="[57,34,1728,1044]"
+
+[HKEY_CURRENT_USER\Software\Adobe\Photoshop\60.0\VisitedDirs]
+"STARTUPIMAGEDIRECTORY"="F:\\PARISI\\Proyecto sprites minijuego\\Illustrator Sprites\\"

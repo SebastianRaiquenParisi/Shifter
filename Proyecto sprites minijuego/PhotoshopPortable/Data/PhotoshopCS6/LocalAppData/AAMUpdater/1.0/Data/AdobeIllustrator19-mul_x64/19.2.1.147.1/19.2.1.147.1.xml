@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?><Manifest CSUVersion="1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="CSUManifest.xsd">
+    <UpdateID>19.2.1.147.1</UpdateID>
+    <OwningChannel>AdobeIllustrator19-mul_x64</OwningChannel>
+    <TargetBuildType>2</TargetBuildType>
+	<TargetLicensingType>1</TargetLicensingType>
+	<RecommendingChannels><ChannelID>AdobeIllustrator19-mul_x64</ChannelID>
+	</RecommendingChannels>
+    <DisplayName default="en_US"><en_US>Illustrator CC 2015.2.1 - Update x64</en_US>
+		<en_GB>Illustrator CC 2015.2.1 - Update x64</en_GB>
+        <cs_CZ>Illustrator CC 2015.2.1 - Aktualizace x64</cs_CZ>
+        <da_DK>Illustrator CC 2015.2.1 - Opdatering x64</da_DK>
+        <de_DE>Illustrator CC 2015.2.1 - Aktualisierung x64</de_DE>
+        <es_ES>Actualización de Illustrator CC 2015.2.1 x64</es_ES>
+		<es_MX>Actualización de Illustrator CC 2015.2.1 x64</es_MX>
+        <fr_FR>Illustrator CC 2015.2.1 - Mise à jour x64</fr_FR>
+		<fr_CA>Illustrator CC 2015.2.1 - Mise à jour x64</fr_CA>
+		<fr_MA>Illustrator CC 2015.2.1 - Mise à jour x64</fr_MA>
+		<fi_FI>Illustrator CC 2015.2.1 - Update x64</fi_FI>
+        <hu_HU>Illustrator CC 2015.2.1 - Frissítés x64</hu_HU>
+        <it_IT>Aggiornamento di Illustrator CC 2015.2.1 x64</it_IT>
+        <ja_JP>Illustrator CC 2015.2.1 - アップデート x64</ja_JP>
+        <ko_KR>Illustrator CC 2015.2.1 - 업데이트 x64</ko_KR>
+        <nl_NL>Illustrator CC 2015.2.1 - Update x64</nl_NL>
+        <pl_PL>Illustrator CC 2015.2.1 - aktualizacja x64</pl_PL>
+        <pt_BR>Illustrator CC 2015.2.1 - Atualização x64</pt_BR>
+        <ru_RU>Illustrator CC 2015.2.1 - Обновление x64</ru_RU>
+        <sv_SE>Illustrator CC 2015.2.1 - uppdatering x64</sv_SE>
+        <tr_TR>Illustrator CC 2015.2.1 - Güncelleme x64</tr_TR>
+        <uk_UA>Illustrator CC 2015.2.1 - Оновлення x64</uk_UA>
+        <zh_CN>Illustrator CC 2015.2.1 - 更新 x64</zh_CN>
+        <zh_TW>Illustrator CC 2015.2.1 - 更新 x64</zh_TW>
+		<en_AE>Illustrator CC 2015.2.1 - Update x64</en_AE>
+		<en_IL>Illustrator CC 2015.2.1 - Update x64</en_IL>
+		<ar_AE>Illustrator CC 2015.2.1 - Update x64</ar_AE>
+		<he_IL>Illustrator CC 2015.2.1 - Update x64</he_IL>
+    </DisplayName>
+    <Description default="en_US"><en_US>This update delivers stability-related fixes for Adobe Illustrator CC 2015 releases.</en_US>
+		<en_GB>This update delivers stability-related fixes for Adobe Illustrator CC 2015 releases.</en_GB>
+        <cs_CZ>Tato aktualizace obsahuje opravy stability různých verzí aplikace Adobe Illustrator CC 2015.</cs_CZ>
+        <da_DK>Denne opdatering giver stabilitetsrelaterede rettelser til Adobe Illustrator CC 2015-udgivelser.</da_DK>
+        <de_DE>Dieses Update bietet stabilitätsbezogene Fehlerbehebungen für Versionen von Adobe Illustrator CC 2015.</de_DE>
+        <es_ES>en esta actualización hemos mejorado la estabilidad de las versiones de Adobe Illustrator CC 2015.</es_ES>
+		<es_MX>en esta actualización hemos mejorado la estabilidad de las versiones de Adobe Illustrator CC 2015.</es_MX>
+		<fi_FI>This update delivers stability-related fixes for Adobe Illustrator CC 2015 releases.</fi_FI>
+        <fr_FR>cette mise à jour apporte des correctifs relatifs à la stabilité pour les versions Adobe Illustrator CC 2015.</fr_FR>
+		<fr_CA>cette mise à jour apporte des correctifs relatifs à la stabilité pour les versions Adobe Illustrator CC 2015.</fr_CA>
+		<fr_MA>cette mise à jour apporte des correctifs relatifs à la stabilité pour les versions Adobe Illustrator CC 2015.</fr_MA>
+        <hu_HU>A frissítés stabilitással kapcsolatos javításokat biztosít az Adobe Illustrator CC 2015-ös kiadásaihoz.</hu_HU>
+        <it_IT>questo aggiornamento offre correzioni relative alla stabilità per le versioni di Adobe Illustrator CC 2015.</it_IT>
+        <ja_JP>このアップデートには、Adobe Illustrator CC 2015 リリースの安定性に関する修正が含まれています。</ja_JP>
+        <ko_KR>이 업데이트는 Adobe Illustrator CC 2015 릴리스의 안정성 관련 문제를 수정합니다.</ko_KR>
+        <nl_NL>Deze update bevat oplossingen voor stabiliteitsproblemen voor Adobe Illustrator CC 2015-versies.</nl_NL>
+        <pl_PL>ta aktualizacja zawiera poprawki stabilności wydań programu Adobe Illustrator CC 2015.</pl_PL>
+        <pt_BR>esta atualização oferece correções relacionadas à estabilidade para versões do Adobe Illustrator CC 2015.</pt_BR>
+        <ru_RU>повышен уровень стабильности по сравнению с выпусками Adobe Illustrator CC 2015.</ru_RU>
+        <sv_SE>Den här uppdateringen innehåller stabilitetsförbättringar av Adobe Illustrator CC 2015-utgåvor.</sv_SE>
+        <tr_TR>Bu güncelleme, Adobe Illustrator CC 2015 sürümleri için kararlılığa yönelik düzeltmeler sunar.</tr_TR>
+        <uk_UA>в цьому оновленні покращено стабільність роботи випусків Adobe Illustrator CC 2015.</uk_UA>
+        <zh_CN>此更新提供针对 Adobe Illustrator CC 2015 版的稳定性问题修复。</zh_CN>
+        <zh_TW>此更新提供針對 Adobe Illustrator CC 2015 版的穩定性修正。</zh_TW>
+		<en_AE>This update delivers stability-related fixes for Adobe Illustrator CC 2015 releases.</en_AE>
+		<en_IL>This update delivers stability-related fixes for Adobe Illustrator CC 2015 releases.</en_IL>
+		<ar_AE>This update delivers stability-related fixes for Adobe Illustrator CC 2015 releases.</ar_AE>
+		<he_IL>This update delivers stability-related fixes for Adobe Illustrator CC 2015 releases.</he_IL>
+    </Description>
+    <AffectedChannels><ChannelID>AdobeIllustrator19-mul_x64</ChannelID>
+    </AffectedChannels>
+    <InstallFiles><File RIBSBased="1"><Name>setup.zip</Name>
+      <Type>1</Type>
+      <ExecutableName>AdobePatchInstaller.exe</ExecutableName>
+      <Size>389103143</Size>
+      
+    <SignatureType>1</SignatureType>
+<Signature>nASv3AyN9uJpYeyDb/P0+MCrDovGZirqFo3gNjM/rpi1l0COPYvzSGEZVsemvEkI6jNoD6bO72/2jrI4/dtxcaSoeXc3K/kl2FQuyuKymNYVouSJtWxyHiqcO7ybjAMvIAFRdD1m6gBxY5qvO06zJRBLmhyIt6IWA3Yo5uZ049Z0J09hL9Iy7GzYx2rmmReop5nYZuWmBnTWEdAE4lYS1CsQQtu1fBMpNxI9Uhu6EI2fwN4Y251yDbZNaN3ee3j3tLdxt6DRYlrttFDFhhN5yAwElGRUT7wnTD86/X0dtX6wBYO60mOCF8yJ5Y097wmJsfuXRuE2g+FwSmgXZHEfnY1iVCuyIwZ9/sswpylxMNGGOxMnoG3HK/8UVKx35WxpPACvCkCFs4YMLxOS1C2D3BH86cwUBiFyCxTZ3GoAADci3CkZWO+AJgJ8w5VI9Zhm1CeYvItaCyQS5kfXh4d+KqwvSKaIznMpTRm+oGIa497G2xO6tGWTsjJJUocxuROp</Signature>
+</File>
+  </InstallFiles>
+    <NeedsReboot>false</NeedsReboot>
+
+  
+  
+  
+  
+  
+  
+  <UpdatePayloadID>{FF452D40-3FEA-4D37-A0C4-C776F9C41FAC}</UpdatePayloadID>
+  <OwningPayloadID>{5680D629-B263-49CC-821E-3CEBD4507B51}</OwningPayloadID>
+  <ConflictingProcesses><Process blocking="1" processType="Adobe">^[Ii][Ll][Ll][Uu][Ss][Tt][Rr][Aa][Tt][Oo][Rr]\.[Ee][Xx][Ee]</Process>
+    <Process blocking="1" processType="Adobe">^[Cc][Rr][Aa][Ss][Hh][Rr][Ee][Pp][Oo][Rr][Tt][Ee][Rr]App\.[Ee][Xx][Ee]</Process>
+  </ConflictingProcesses>
+</Manifest>

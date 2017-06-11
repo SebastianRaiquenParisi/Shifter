@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Updates CSUVersion="1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="CSUTracker.xsd">
+<UpdateRef Combo="0" PreviewPatch="0" ReFetch="0" RefID="AdobeApplicationManager-1.0/update14" Viewed="1" WaitingForProductEvent="0">
+<RecommendationList>
+<Recommendation>
+<ChannelID>AdobeApplicationManager-1.0</ChannelID>
+</Recommendation>
+</RecommendationList>
+<TargetBuildType>2</TargetBuildType>
+<TargetLicensingType>0</TargetLicensingType>
+<State>0</State>
+<Error>0</Error>
+<DisplayName default="en_US">
+<ar_AE>Adobe Application Manager</ar_AE>
+<bg_BG>Adobe Application Manager</bg_BG>
+<cs_CZ>Adobe Application Manager</cs_CZ>
+<da_DK>Adobe Application Manager</da_DK>
+<de_DE>Adobe Application Manager</de_DE>
+<el_GR>Adobe Application Manager</el_GR>
+<en_US>Adobe Application Manager</en_US>
+<es_ES>Adobe Application Manager</es_ES>
+<et_EE>Adobe Application Manager</et_EE>
+<fi_FI>Adobe Application Manager</fi_FI>
+<fr_FR>Adobe Application Manager</fr_FR>
+<he_IL>Adobe Application Manager</he_IL>
+<hr_HR>Adobe Application Manager</hr_HR>
+<hu_HU>Adobe Application Manager</hu_HU>
+<it_IT>Adobe Application Manager</it_IT>
+<ja_JP>Adobe Application Manager</ja_JP>
+<ko_KR>Adobe Application Manager</ko_KR>
+<lt_LT>Adobe Application Manager</lt_LT>
+<lv_LV>Adobe Application Manager</lv_LV>
+<nb_NO>Adobe Application Manager</nb_NO>
+<nl_NL>Adobe Application Manager</nl_NL>
+<pl_PL>Adobe Application Manager</pl_PL>
+<pt_BR>Adobe Application Manager</pt_BR>
+<ro_RO>Adobe Application Manager</ro_RO>
+<ru_RU>Adobe Application Manager</ru_RU>
+<sk_SK>Adobe Application Manager</sk_SK>
+<sl_SI>Adobe Application Manager</sl_SI>
+<sv_SE>Adobe Application Manager</sv_SE>
+<tr_TR>Adobe Application Manager</tr_TR>
+<uk_UA>Adobe Application Manager</uk_UA>
+<zh_CN>Adobe Application Manager</zh_CN>
+<zh_TW>Adobe Application Manager</zh_TW>
+</DisplayName>
+<Description default="en_US">
+<en_US>Required to keep Adobe applications up to date, includes Adobe Software Integrity Service</en_US>
+<cs_CZ>Nezbytný nástroj k zajištění aktualizací pro aplikace Adobe. Součástí je služba Adobe Software Integrity Service</cs_CZ>
+<da_DK>Påkrævet for at holde Adobe-programmer opdateret, omfatter Adobe Software Integrity Service</da_DK>
+<de_DE>Erforderlich, um Adobe-Applikationen auf dem neuesten Stand zu halten. Umfasst Adobe Software Integrity Service</de_DE>
+<es_ES>Necesario para mantener las aplicaciones de Adobe actualizadas. Incluye Adobe Software Integrity Service.</es_ES>
+<es_MX>Necesario para mantener las aplicaciones de Adobe actualizadas. Incluye Adobe Software Integrity Service.</es_MX>
+<fi_FI>Tarvitaan Adoben sovellusten pitämiseksi ajan tasalla, sisältää Adobe Software Integrity Servicen</fi_FI>
+<fr_FR>Nécessaire pour garder les applications Adobe à jour, y compris Adobe Software Integrity Service</fr_FR>
+<fr_CA>Nécessaire pour garder les applications Adobe à jour, y compris Adobe Software Integrity Service</fr_CA>
+<it_IT>Richiesto per mantenere le applicazioni Adobe aggiornate. Comprende Adobe Software Integrity Service</it_IT>
+<ja_JP>Adobe Software Integrity Service を含むアドビアプリケーションを最新の状態に保つ必要があります</ja_JP>
+<ko_KR>Adobe 응용 프로그램을 최신 상태로 유지하기 위해 필요하며, Adobe Software Integrity Service를 포함합니다</ko_KR>
+<nb_NO>Nødvendig for å holde Adobe-applikasjoner oppdatert, inkludert Adobe Software Integrity Service</nb_NO>
+<nl_NL>Vereist om Adobe-toepassingen up-to-date te houden. Bevat Adobe Software Integrity Service</nl_NL>
+<pl_PL>Wymagany do aktualizacji aplikacji Adobe. Zawiera usługę Adobe Software Integrity Service</pl_PL>
+<pt_BR>Necessário para manter os aplicativos da Adobe atualizados, inclui o Adobe Software Integrity Service</pt_BR>
+<ru_RU>Необходим для поддержки актуальности приложений Adobe. Включает службу Adobe Software Integrity Service.</ru_RU>
+<sv_SE>Krävs för att hålla Adobe-program uppdaterade, inklusive Adobe Software Integrity Service</sv_SE>
+<tr_TR>Adobe uygulamalarının güncel tutulması için gereklidir, Adobe Software Integrity Service&apos;ı içerir</tr_TR>
+<zh_CN>需要始终将 Adobe 应用程序保持为最新版本，包括 Adobe Software Integrity Service</zh_CN>
+<zh_TW>必須讓 Adobe 應用程式保持最新狀態，包含 Adobe Software Integrity Service</zh_TW>
+</Description>
+<AffectedChannels>
+<ChannelID>AdobeApplicationManager-1.0</ChannelID>
+</AffectedChannels>
+<InstallFiles>
+<File>
+<Name>setup.zip</Name>
+<Type>1</Type>
+<ExecutableName>Set-up.exe</ExecutableName>
+<SilentExecutableArgs>--action=update</SilentExecutableArgs>
+<Size>77875038</Size>
+<State>0</State>
+<Error>0</Error>
+</File>
+</InstallFiles>
+<NeedsReboot>0</NeedsReboot>
+</UpdateRef>
+<UpdateRef Combo="1" PreviewPatch="0" ReFetch="0" RefID="AdobeIllustrator19-mul_x64/19.2.1.147.1" Viewed="1" WaitingForProductEvent="0">
+<RecommendationList>
+<Recommendation>
+<ChannelID>AdobeIllustrator19-mul_x64</ChannelID>
+<UpdateID>19.2.1</UpdateID>
+<OwningID>AdobeIllustrator19-en_US_x64</OwningID>
+<LEID>V7{}Illustrator-19-Win-GM</LEID>
+</Recommendation>
+<Recommendation>
+<ChannelID>AdobeIllustrator19-mul_x64</ChannelID>
+<LEID>V7{}Illustrator-19-Win-GM</LEID>
+<UpdateID>19.2.1.147.1</UpdateID>
+<OwningID>AdobeIllustrator19-mul_x64</OwningID>
+</Recommendation>
+</RecommendationList>
+<TargetBuildType>2</TargetBuildType>
+<TargetLicensingType>1</TargetLicensingType>
+<State>0</State>
+<Error>0</Error>
+<DisplayName default="en_US">
+<en_US>Illustrator CC 2015.2.1 - Update x64</en_US>
+<en_GB>Illustrator CC 2015.2.1 - Update x64</en_GB>
+<cs_CZ>Illustrator CC 2015.2.1 - Aktualizace x64</cs_CZ>
+<da_DK>Illustrator CC 2015.2.1 - Opdatering x64</da_DK>
+<de_DE>Illustrator CC 2015.2.1 - Aktualisierung x64</de_DE>
+<es_ES>Actualización de Illustrator CC 2015.2.1 x64</es_ES>
+<es_MX>Actualización de Illustrator CC 2015.2.1 x64</es_MX>
+<fr_FR>Illustrator CC 2015.2.1 - Mise à jour x64</fr_FR>
+<fr_CA>Illustrator CC 2015.2.1 - Mise à jour x64</fr_CA>
+<fr_MA>Illustrator CC 2015.2.1 - Mise à jour x64</fr_MA>
+<fi_FI>Illustrator CC 2015.2.1 - Update x64</fi_FI>
+<hu_HU>Illustrator CC 2015.2.1 - Frissítés x64</hu_HU>
+<it_IT>Aggiornamento di Illustrator CC 2015.2.1 x64</it_IT>
+<ja_JP>Illustrator CC 2015.2.1 - アップデート x64</ja_JP>
+<ko_KR>Illustrator CC 2015.2.1 - 업데이트 x64</ko_KR>
+<nl_NL>Illustrator CC 2015.2.1 - Update x64</nl_NL>
+<pl_PL>Illustrator CC 2015.2.1 - aktualizacja x64</pl_PL>
+<pt_BR>Illustrator CC 2015.2.1 - Atualização x64</pt_BR>
+<ru_RU>Illustrator CC 2015.2.1 - Обновление x64</ru_RU>
+<sv_SE>Illustrator CC 2015.2.1 - uppdatering x64</sv_SE>
+<tr_TR>Illustrator CC 2015.2.1 - Güncelleme x64</tr_TR>
+<uk_UA>Illustrator CC 2015.2.1 - Оновлення x64</uk_UA>
+<zh_CN>Illustrator CC 2015.2.1 - 更新 x64</zh_CN>
+<zh_TW>Illustrator CC 2015.2.1 - 更新 x64</zh_TW>
+<en_AE>Illustrator CC 2015.2.1 - Update x64</en_AE>
+<en_IL>Illustrator CC 2015.2.1 - Update x64</en_IL>
+<ar_AE>Illustrator CC 2015.2.1 - Update x64</ar_AE>
+<he_IL>Illustrator CC 2015.2.1 - Update x64</he_IL>
+</DisplayName>
+<Description default="en_US">
+<en_US>This update delivers stability-related fixes for Adobe Illustrator CC 2015 releases.</en_US>
+<en_GB>This update delivers stability-related fixes for Adobe Illustrator CC 2015 releases.</en_GB>
+<cs_CZ>Tato aktualizace obsahuje opravy stability různých verzí aplikace Adobe Illustrator CC 2015.</cs_CZ>
+<da_DK>Denne opdatering giver stabilitetsrelaterede rettelser til Adobe Illustrator CC 2015-udgivelser.</da_DK>
+<de_DE>Dieses Update bietet stabilitätsbezogene Fehlerbehebungen für Versionen von Adobe Illustrator CC 2015.</de_DE>
+<es_ES>en esta actualización hemos mejorado la estabilidad de las versiones de Adobe Illustrator CC 2015.</es_ES>
+<es_MX>en esta actualización hemos mejorado la estabilidad de las versiones de Adobe Illustrator CC 2015.</es_MX>
+<fi_FI>This update delivers stability-related fixes for Adobe Illustrator CC 2015 releases.</fi_FI>
+<fr_FR>cette mise à jour apporte des correctifs relatifs à la stabilité pour les versions Adobe Illustrator CC 2015.</fr_FR>
+<fr_CA>cette mise à jour apporte des correctifs relatifs à la stabilité pour les versions Adobe Illustrator CC 2015.</fr_CA>
+<fr_MA>cette mise à jour apporte des correctifs relatifs à la stabilité pour les versions Adobe Illustrator CC 2015.</fr_MA>
+<hu_HU>A frissítés stabilitással kapcsolatos javításokat biztosít az Adobe Illustrator CC 2015-ös kiadásaihoz.</hu_HU>
+<it_IT>questo aggiornamento offre correzioni relative alla stabilità per le versioni di Adobe Illustrator CC 2015.</it_IT>
+<ja_JP>このアップデートには、Adobe Illustrator CC 2015 リリースの安定性に関する修正が含まれています。</ja_JP>
+<ko_KR>이 업데이트는 Adobe Illustrator CC 2015 릴리스의 안정성 관련 문제를 수정합니다.</ko_KR>
+<nl_NL>Deze update bevat oplossingen voor stabiliteitsproblemen voor Adobe Illustrator CC 2015-versies.</nl_NL>
+<pl_PL>ta aktualizacja zawiera poprawki stabilności wydań programu Adobe Illustrator CC 2015.</pl_PL>
+<pt_BR>esta atualização oferece correções relacionadas à estabilidade para versões do Adobe Illustrator CC 2015.</pt_BR>
+<ru_RU>повышен уровень стабильности по сравнению с выпусками Adobe Illustrator CC 2015.</ru_RU>
+<sv_SE>Den här uppdateringen innehåller stabilitetsförbättringar av Adobe Illustrator CC 2015-utgåvor.</sv_SE>
+<tr_TR>Bu güncelleme, Adobe Illustrator CC 2015 sürümleri için kararlılığa yönelik düzeltmeler sunar.</tr_TR>
+<uk_UA>в цьому оновленні покращено стабільність роботи випусків Adobe Illustrator CC 2015.</uk_UA>
+<zh_CN>此更新提供针对 Adobe Illustrator CC 2015 版的稳定性问题修复。</zh_CN>
+<zh_TW>此更新提供針對 Adobe Illustrator CC 2015 版的穩定性修正。</zh_TW>
+<en_AE>This update delivers stability-related fixes for Adobe Illustrator CC 2015 releases.</en_AE>
+<en_IL>This update delivers stability-related fixes for Adobe Illustrator CC 2015 releases.</en_IL>
+<ar_AE>This update delivers stability-related fixes for Adobe Illustrator CC 2015 releases.</ar_AE>
+<he_IL>This update delivers stability-related fixes for Adobe Illustrator CC 2015 releases.</he_IL>
+</Description>
+<AffectedChannels>
+<ChannelID>AdobeIllustrator19-mul_x64</ChannelID>
+</AffectedChannels>
+<InstallFiles>
+<File RIBSBased="1">
+<Name>setup.zip</Name>
+<Type>1</Type>
+<ExecutableName>AdobePatchInstaller.exe</ExecutableName>
+<Size>389103143</Size>
+<SignatureType>1</SignatureType>
+<Signature>nASv3AyN9uJpYeyDb/P0+MCrDovGZirqFo3gNjM/rpi1l0COPYvzSGEZVsemvEkI6jNoD6bO72/2jrI4/dtxcaSoeXc3K/kl2FQuyuKymNYVouSJtWxyHiqcO7ybjAMvIAFRdD1m6gBxY5qvO06zJRBLmhyIt6IWA3Yo5uZ049Z0J09hL9Iy7GzYx2rmmReop5nYZuWmBnTWEdAE4lYS1CsQQtu1fBMpNxI9Uhu6EI2fwN4Y251yDbZNaN3ee3j3tLdxt6DRYlrttFDFhhN5yAwElGRUT7wnTD86/X0dtX6wBYO60mOCF8yJ5Y097wmJsfuXRuE2g+FwSmgXZHEfnY1iVCuyIwZ9/sswpylxMNGGOxMnoG3HK/8UVKx35WxpPACvCkCFs4YMLxOS1C2D3BH86cwUBiFyCxTZ3GoAADci3CkZWO+AJgJ8w5VI9Zhm1CeYvItaCyQS5kfXh4d+KqwvSKaIznMpTRm+oGIa497G2xO6tGWTsjJJUocxuROp</Signature>
+<State>0</State>
+<Error>0</Error>
+</File>
+</InstallFiles>
+<NeedsReboot>0</NeedsReboot>
+</UpdateRef>
+</Updates>
