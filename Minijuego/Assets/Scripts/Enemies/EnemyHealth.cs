@@ -10,12 +10,13 @@ public class EnemyHealth : MonoBehaviour {
     {
         correctLayer = gameObject.layer;
     }
-    void OnTriggerEnter2D()
+    void OnTriggerEnter2D(Collision col)
     {
-        health--;
-        invulnTimer = invulnPeriod;
-        gameObject.layer = 10;
-
+        if (col.gameObject.tag != "laser") {
+            health--;
+            invulnTimer = invulnPeriod;
+            gameObject.layer = 10;
+        }
     }
     void Update()
     {
