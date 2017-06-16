@@ -91,6 +91,7 @@
     <Compile Include="Assets\Scripts\Enemies\Standard Game\enemyBulletFollowsPlayer.cs" />
     <Compile Include="Assets\Scripts\Enemies\Sword Game\BossSpawnerSwords.cs" />
     <Compile Include="Assets\Scripts\Enemies\Sword Game\ShurikenScript.cs" />
+    <Compile Include="Assets\Scripts\Enemies\Sword Game\SwordScript.cs" />
     <Compile Include="Assets\Scripts\Enemies\Sword Game\SwordSuperAttack.cs" />
     <Compile Include="Assets\Scripts\Enemies\WinScriptBosses.cs" />
     <Compile Include="Assets\Scripts\Enemies\enemySpawner.cs" />
