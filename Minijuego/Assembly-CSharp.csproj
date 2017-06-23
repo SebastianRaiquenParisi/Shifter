@@ -6,7 +6,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{65DF856E-AD5D-30BA-BF22-158B21EAF927}</ProjectGuid>
+    <ProjectGuid>{72DA2AA8-8D42-0A4F-4CF9-6901EB3ADF6F}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -39,22 +39,29 @@
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="UnityEngine">
-      <HintPath>D:/Users/42375238/Desktop/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
+      <HintPath>C:/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor">
-      <HintPath>D:/Users/42375238/Desktop/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
+      <HintPath>C:/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\AnimationCharacter.cs" />
+     <Compile Include="Assets\Scripts\Background.cs" />
      <Compile Include="Assets\Scripts\Enemies\BossHealthMovement.cs" />
+     <Compile Include="Assets\Scripts\Enemies\BossWeaknessBehaviour.cs" />
      <Compile Include="Assets\Scripts\Enemies\EnemyHealth.cs" />
      <Compile Include="Assets\Scripts\Enemies\EnemyShooting.cs" />
      <Compile Include="Assets\Scripts\Enemies\Laser Game\BossSpawnerLaser.cs" />
-     <Compile Include="Assets\Scripts\Enemies\Laser Game\LaserScript.cs" />
+     <Compile Include="Assets\Scripts\Enemies\Laser Game\LaserScriptHorizontal.cs" />
+     <Compile Include="Assets\Scripts\Enemies\Laser Game\LaserScriptVertical.cs" />
      <Compile Include="Assets\Scripts\Enemies\Standard Game\enemyBulletDoesntFollow.cs" />
      <Compile Include="Assets\Scripts\Enemies\Standard Game\enemyBulletFollowsPlayer.cs" />
      <Compile Include="Assets\Scripts\Enemies\Sword Game\BossSpawnerSwords.cs" />
+     <Compile Include="Assets\Scripts\Enemies\Sword Game\ShurikenScript.cs" />
+     <Compile Include="Assets\Scripts\Enemies\Sword Game\SwordScript.cs" />
      <Compile Include="Assets\Scripts\Enemies\Sword Game\SwordSuperAttack.cs" />
+     <Compile Include="Assets\Scripts\Enemies\WinScriptBosses.cs" />
      <Compile Include="Assets\Scripts\Enemies\enemySpawner.cs" />
      <Compile Include="Assets\Scripts\FacesPlayer.cs" />
      <Compile Include="Assets\Scripts\GameOverManager.cs" />
@@ -69,25 +76,25 @@
      <Compile Include="Assets\Scripts\SelfDestruct.cs" />
      <Compile Include="Assets\Scripts\WinScript.cs" />
  <Reference Include="UnityEngine.UI">
- <HintPath>D:/Users/42375238/Desktop/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+ <HintPath>C:/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.Networking">
- <HintPath>D:/Users/42375238/Desktop/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
+ <HintPath>C:/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.TestRunner">
- <HintPath>D:/Users/42375238/Desktop/Unity/Editor/Data/UnityExtensions/Unity/TestRunner/UnityEngine.TestRunner.dll</HintPath>
+ <HintPath>C:/Unity/Editor/Data/UnityExtensions/Unity/TestRunner/UnityEngine.TestRunner.dll</HintPath>
  </Reference>
  <Reference Include="nunit.framework">
- <HintPath>D:/Users/42375238/Desktop/Unity/Editor/Data/UnityExtensions/Unity/TestRunner/nunit.framework.dll</HintPath>
+ <HintPath>C:/Unity/Editor/Data/UnityExtensions/Unity/TestRunner/nunit.framework.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.Analytics">
- <HintPath>D:/Users/42375238/Desktop/Unity/Editor/Data/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
+ <HintPath>C:/Unity/Editor/Data/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.HoloLens">
- <HintPath>D:/Users/42375238/Desktop/Unity/Editor/Data/UnityExtensions/Unity/UnityHoloLens/RuntimeEditor/UnityEngine.HoloLens.dll</HintPath>
+ <HintPath>C:/Unity/Editor/Data/UnityExtensions/Unity/UnityHoloLens/RuntimeEditor/UnityEngine.HoloLens.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.VR">
- <HintPath>D:/Users/42375238/Desktop/Unity/Editor/Data/UnityExtensions/Unity/UnityVR/RuntimeEditor/UnityEngine.VR.dll</HintPath>
+ <HintPath>C:/Unity/Editor/Data/UnityExtensions/Unity/UnityVR/RuntimeEditor/UnityEngine.VR.dll</HintPath>
  </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
